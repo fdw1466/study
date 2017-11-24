@@ -1,0 +1,14 @@
+package designPattern.action.ChainPattern;
+
+public class ConsoleLoggr extends AbstractLogger {
+
+	public ConsoleLoggr(int level) {
+		this.level = level;
+	}
+
+	@Override
+	protected void write(String message) {
+		System.out.println("Standard Console::Logger: " + message);
+	}
+
+}
