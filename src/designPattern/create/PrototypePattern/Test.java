@@ -12,9 +12,11 @@ public class Test {
 
 		Shape shape1 = ShapeCache.getShape("1");
 		System.out.println("shape:" + shape1.getType());
+		shape1.draw();
 
 		Shape shape2 = ShapeCache.getShape("2");
 		System.out.println("shape:" + shape2.getType());
+		shape2.draw();
 	}
 
 }
